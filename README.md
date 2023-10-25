@@ -2,4 +2,4 @@
 
 # 2. docker-compose up -d
 
-### หมายเหตุ docker ใช้เพื่อรัน flask เท่านั้น โปรดรัน mysal ด้วย xampp บนเครื่องตนเอง
+### หมายเหตุ docker ใช้เพื่อรัน flask เท่านั้น โปรดรัน mysql ด้วย xampp บนเครื่องตนเอง
