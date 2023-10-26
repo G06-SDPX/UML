@@ -56,7 +56,7 @@ The API has the following endpoints:
  - GET /view/user/<user_id>: View posts by a specific user.
  - GET /view/location/<location_id>: View posts at a specific location.
 
-## Database Tables
+## Database Tables (Mockup Data)
 
 ### Locations
 
