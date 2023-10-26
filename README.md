@@ -65,9 +65,9 @@ The API has the following endpoints:
     "tagged_friends": [ "2","3" ] //tagged_user_id_of_friends
 }
 ```
- - GET http://localhost:5000/view: View all posts.
- - GET http://localhost:5000/view/user/<user_id>: View posts by a specific user.
- - GET http://localhost:5000/view/location/<location_id>: View posts at a specific location.
+ - GET localhost:5000/view: View all posts.
+ - GET localhost:5000/view/user/<user_id>: View posts by a specific user.
+ - GET localhost:5000/view/location/<location_id>: View posts at a specific location.
 
 ## Database Tables (Example)
 
