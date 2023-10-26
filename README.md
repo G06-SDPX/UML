@@ -8,6 +8,7 @@ This is a simple Flask application for managing and viewing posts in a social ne
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
+- [Usage](#Usage)
 
 
 ## Features
