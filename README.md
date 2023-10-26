@@ -57,6 +57,13 @@ Before you begin, ensure you have met the following requirements:
 The API has the following endpoints:
 
  - POST /post: Create a new post.
+ {
+    "content": "กรุงเทพมหานคร No.1",
+    "user_id": "1", //Post owner
+    "location_id" : "1", //tagged_location_id
+    "tagged_friends": [ "2","3" ] //tagged_user_id_of_friends
+}
+
  - GET /view: View all posts.
  - GET /view/user/<user_id>: View posts by a specific user.
  - GET /view/location/<location_id>: View posts at a specific location.
