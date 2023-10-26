@@ -1,4 +1,4 @@
-# Flask Post Management App
+# FBX
 
 This is a simple Flask application for managing and viewing posts in a social network. The application provides RESTful API endpoints for creating and viewing posts, along with the ability to tag friends in posts. It uses a MySQL database to store post data.
 
@@ -53,4 +53,3 @@ The API has the following endpoints:
  - GET /view/user/<user_id>: View posts by a specific user.
  - GET /view/location/<location_id>: View posts at a specific location.
 
- 
