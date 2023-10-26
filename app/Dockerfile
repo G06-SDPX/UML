@@ -1,10 +1,9 @@
-# syntax=docker/dockerfile:1
-FROM python:3.7-alpine
-WORKDIR /app
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-COPY requirements.txt /app/requirements.txt
-RUN pip install -r /app/requirements.txt
+FROM python:3.7
+
 EXPOSE 5000
-COPY . .
-CMD ["flask", "run"]
+
+WORKDIR /app
+
+COPY . /app
+RUN pip3 install -r /app/requirements.txt
+CMD python3 /app/app.py

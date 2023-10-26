@@ -9,8 +9,9 @@ class DatabaseConnector:
     def __init__(self):
         self.db_config = {
             'user': 'root',
-            'password': '',
-            'host': 'localhost',
+            'password': 'root',
+            'host': 'db',
+            'port': '3306',
             'database': 'fbx'
         }
 
@@ -149,4 +150,4 @@ def view_location_posts(location_id):
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
