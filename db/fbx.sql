@@ -15,9 +15,64 @@ CREATE TABLE `locations` (
 --
 
 INSERT INTO `locations` (`location_id`, `location_name`) VALUES
-(1, 'บ้านฉลาม'),
-(2, 'ลาดกระบัง');
-
+(1, 'Bangkok'),
+(2, 'Krabi'),
+(3, 'Chiang Mai'),
+(4, 'Chiang Rai'),
+(5, 'Phetchaburi'),
+(6, 'Phetchabun'),
+(7, 'Nakhon Ratchasima'),
+(8, 'Nakhon Si Thammarat'),
+(9, 'Nakhon Sawan'),
+(10, 'Narathiwat'),
+(11, 'Nan'),
+(12, 'Bung Kan'),
+(13, 'Buri Ram'),
+(14, 'Pathum Thani'),
+(15, 'Prachuap Khiri Khan'),
+(16, 'Prachinburi'),
+(17, 'Pattani'),
+(18, 'Phra Nakhon Si Ayutthaya'),
+(19, 'Phayao'),
+(20, 'Phang Nga'),
+(21, 'Phatthalung'),
+(22, 'Phichit'),
+(23, 'Phitsanulok'),
+(24, 'Phuket'),
+(25, 'Maha Sarakham'),
+(26, 'Mukdahan'),
+(27, 'Mae Hong Son'),
+(28, 'Yasothon'),
+(29, 'Yala'),
+(30, 'Roi Et'),
+(31, 'Ranong'),
+(32, 'Rayong'),
+(33, 'Ratchaburi'),
+(34, 'Lopburi'),
+(35, 'Lopburi'),
+(36, 'Songkhla'),
+(37, 'Loei'),
+(38, 'Lampang'),
+(39, 'Lamphun'),
+(40, 'Wang Chik'),
+(41, 'Si Sa Ket'),
+(42, 'Sakon Nakhon'),
+(43, 'Songkhla'),
+(44, 'Satun'),
+(45, 'Surat Thani'),
+(46, 'Surin'),
+(47, 'Sukhothai'),
+(48, 'Suphan Buri'),
+(49, 'Sa Kaeo'),
+(50, 'Saraburi'),
+(51, 'Sing Buri'),
+(52, 'Nong Khai'),
+(53, 'Nong Bua Lam Phu'),
+(54, 'Ang Thong'),
+(55, 'Udon Thani'),
+(56, 'Uttaradit'),
+(57, 'Ubon Ratchathani'),
+(58, 'Amnat Charoen');
 -- --------------------------------------------------------
 
 --
@@ -36,15 +91,13 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `user_id`, `content`, `location_id`) VALUES
-(2, 1, 'มาหาด้วย', 1),
-(3, 1, 'อะไรร', 2),
-(10, 1, 'Mon', NULL),
-(11, 1, 'Mon', 1),
-(12, 1, 'Mon', 1),
-(13, 1, 'Mon', 1),
-(15, 2, 'อะไร', 2),
-(16, 2, 'กระบี่', 2),
-(17, 2, 'อะไรวะ', 2);
+(9, 3, 'Hello from JohnDoe', 1),
+(10, 4, 'Today, the weather is great in Krabi', 2),
+(11, 5, 'The beach here is incredibly beautiful with white sand', 2),
+(12, 3, 'I want to visit Chiang Mai', 3),
+(13, 4, 'Chiang Rai has a very pleasant evening', 4),
+(14, 5, 'Today in Phetchaburi, it is a public holiday', 5);
+
 
 -- --------------------------------------------------------
 
@@ -62,11 +115,15 @@ CREATE TABLE `posttags` (
 --
 
 INSERT INTO `posttags` (`post_id`, `user_id`) VALUES
-(2, 2),
-(3, 1),
+(9, 1),
+(9, 2),
+(10, 1),
+(11, 2),
+(12, 1),
+(12, 3),
 (13, 1),
-(13, 2),
-(16, 1);
+(14, 2);
+
 
 -- --------------------------------------------------------
 
@@ -85,7 +142,14 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `username`) VALUES
 (1, 'Mon'),
-(2, 'Chid');
+(2, 'Chid'),
+(3, 'Alice'),
+(4, 'Bob'),
+(5, 'Charlie'),
+(6, 'David'),
+(7, 'Eve'),
+(8, 'Frank'),
+(9, 'Grace');
 
 --
 -- Indexes for dumped tables

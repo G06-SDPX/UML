@@ -8,7 +8,8 @@ This is a simple Flask application for managing and viewing posts in a social ne
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
-- [Usage](#Usage)
+- [Usage](#usage)
+- [Database Tables](#database-tables)
 
 
 ## Features
@@ -22,9 +23,10 @@ This is a simple Flask application for managing and viewing posts in a social ne
 
 Before you begin, ensure you have met the following requirements:
 
-- Python >= 3.7 installed.
-- Required Python packages installed. You can install them using `pip install -r requirements.txt`.
-- MySQL server running with the specified database and configurations.
+- Docker Desktop >= 4.24.2 installed.
+- Docker version >= 24.0.6 installed.
+- Docker-Compose version >= 2.22.0 installed.
+- Git version >= 2.41.0 installed.
 
 ## Getting Started
 
@@ -53,4 +55,40 @@ The API has the following endpoints:
  - GET /view: View all posts.
  - GET /view/user/<user_id>: View posts by a specific user.
  - GET /view/location/<location_id>: View posts at a specific location.
+
+## Database Tables
+
+### Locations
+
+| location_id | location_name     |
+|------------ | ------------------|
+| 1           | กรุงเทพ            |
+| 2           | กระบี่              |
+| 3           | เชียงใหม่           |
+| 4           | เชียงราย           |
+| ...         | ...               |
+
+### Posts
+
+| post_id | user_id | content                           | location_id |
+| ------- | ------- | --------------------------------- | ----------- |
+| 1       | 1       | สวัสดี, กรุงเทพ!                     | 1           |
+| 2       | 2       | วันนี้อากาศดีมากในกระบี่                | 2           |
+| ...     | ...     | ...                               | ...         |
+
+### Posttags
+
+| post_id | user_id |
+| ------- | ------- |
+| 1       | 1       |
+| 2       | 2       |
+| ...     | ...     |
+
+### Users
+
+| user_id | username |
+| ------- | -------- |
+| 1       | Mon      |
+| 2       | Chid     |
+| ...     | ...      |
 
