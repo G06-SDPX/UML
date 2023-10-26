@@ -1,3 +1,8 @@
+# Diagram
+
+## Class Diagram (https://github.com/G06-SDPX/UML/blob/main/class-diagram/class-diagram.pdf)
+## Sequence Diagrams (https://github.com/G06-SDPX/UML/blob/main/sequence-diagrams/sequence-diagrams.pdf)
+
 # FBX
 
 This is a simple Flask application for managing and viewing posts in a social network. The application provides RESTful API endpoints for creating and viewing posts, along with the ability to tag friends in posts. It uses a MySQL database to store post data.
