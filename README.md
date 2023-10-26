@@ -26,7 +26,7 @@ This is a simple Flask application for managing and viewing posts in a social ne
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin, ensure you have met the following requirements (Recommend):
 
 - Docker Desktop >= 4.24.2 installed.
 - Docker version >= 24.0.6 installed.
