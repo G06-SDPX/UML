@@ -1,7 +1,7 @@
 # Diagram
 
-## [Class Diagram](https://github.com/G06-SDPX/UML/blob/main/class-diagram/class-diagram.pdf)
-## [Sequence Diagrams](https://github.com/G06-SDPX/UML/blob/main/sequence-diagrams/sequence-diagrams.pdf)
+## - [Class Diagram](https://github.com/G06-SDPX/UML/blob/main/class-diagram/class-diagram.pdf)
+## - [Sequence Diagrams](https://github.com/G06-SDPX/UML/blob/main/sequence-diagrams/sequence-diagrams.pdf)
 
 # FBX
 
