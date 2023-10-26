@@ -56,7 +56,7 @@ Before you begin, ensure you have met the following requirements:
 
 The API has the following endpoints:
 
- - POST /post: Create a new post.
+ - POST http://localhost:5000/post: Create a new post.
  ```json
  {
     "content": "กรุงเทพมหานคร No.1",
@@ -65,9 +65,9 @@ The API has the following endpoints:
     "tagged_friends": [ "2","3" ] //tagged_user_id_of_friends
 }
 ```
- - GET /view: View all posts.
- - GET /view/user/<user_id>: View posts by a specific user.
- - GET /view/location/<location_id>: View posts at a specific location.
+ - GET http://localhost:5000/view: View all posts.
+ - GET http://localhost:5000/view/user/<user_id>: View posts by a specific user.
+ - GET http://localhost:5000/view/location/<location_id>: View posts at a specific location.
 
 ## Database Tables (Example)
 
