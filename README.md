@@ -56,7 +56,7 @@ Before you begin, ensure you have met the following requirements:
 
 The API has the following endpoints:
 
- - POST http://localhost:5000/post: Create a new post.
+ - POST localhost:5000/post: Create a new post.
  ```json
  {
     "content": "กรุงเทพมหานคร No.1",
