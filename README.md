@@ -62,18 +62,18 @@ The API has the following endpoints:
 
 | location_id | location_name     |
 |------------ | ------------------|
-| 1           | กรุงเทพ            |
-| 2           | กระบี่              |
-| 3           | เชียงใหม่           |
-| 4           | เชียงราย           |
+| 1           | Bangkok           |
+| 2           | Krabi             |
+| 3           | Chiang Mai        |
+| 4           | Chiang Rai        |
 | ...         | ...               |
 
 ### Posts
 
 | post_id | user_id | content                           | location_id |
 | ------- | ------- | --------------------------------- | ----------- |
-| 1       | 1       | สวัสดี, กรุงเทพ!                     | 1           |
-| 2       | 2       | วันนี้อากาศดีมากในกระบี่                | 2           |
+| 1       | 1       | Hello from JohnDoe!               | 1           |
+| 2       | 2       | Today, the weather is great in Krabi | 2           |
 | ...     | ...     | ...                               | ...         |
 
 ### Posttags

@@ -2,13 +2,13 @@ SET character_set_client = 'utf8';
 CREATE DATABASE fbx;
 USE fbx;
 
-ALTER DATABASE fbx CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER DATABASE fbx CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 
 CREATE TABLE `locations` (
   `location_id` int(11) NOT NULL,
-  `location_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `location_name` varchar(255) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `locations`
@@ -82,9 +82,9 @@ INSERT INTO `locations` (`location_id`, `location_name`) VALUES
 CREATE TABLE `posts` (
   `post_id` int(11) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `content` text COLLATE utf8_general_ci NOT NULL,
   `location_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `posts`
@@ -108,7 +108,7 @@ INSERT INTO `posts` (`post_id`, `user_id`, `content`, `location_id`) VALUES
 CREATE TABLE `posttags` (
   `post_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `posttags`
@@ -133,8 +133,8 @@ INSERT INTO `posttags` (`post_id`, `user_id`) VALUES
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `username` varchar(255) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `users`
